@@ -3,6 +3,7 @@
 
 import { useEffect, useState } from "react";
 import SignInButton from "../components/SignInButton";
+import { DialogContent } from "@mui/material";
 
 export default function Home() {
   const [user, setUser] = useState<{
@@ -43,9 +44,12 @@ export default function Home() {
   }
 
   return (
-    <div style={{ textAlign: "center", marginTop: 64 }}>
-      <h1>My Google‑OAuth App</h1>
-      <SignInButton />
+    <div> 
+      <div style={{ textAlign: "center", marginTop: 64 }}>
+        <h1>Login Below!</h1>
+        <SignInButton />
+        </div>
     </div>
+    
   );
 }

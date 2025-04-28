@@ -43,5 +43,6 @@ export async function GET(request: Request) {
   //    (encodeURIComponent so it survives as a search param)
   const dest = new URL(origin);
   dest.searchParams.set("user", encodeURIComponent(JSON.stringify(profile)));
+  dest.searchParams.set("provider", "google");
   return NextResponse.redirect(dest);
 }
