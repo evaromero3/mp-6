@@ -1,4 +1,3 @@
-// app/api/auth/google/callback/route.ts
 import { NextResponse } from "next/server";
 
 export async function GET(request: Request) {

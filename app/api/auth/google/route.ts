@@ -1,4 +1,3 @@
-// app/api/auth/google/route.ts
 import { NextResponse } from "next/server";
 
 export function GET(request: Request) {
