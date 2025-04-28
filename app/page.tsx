@@ -3,7 +3,6 @@
 
 import { useEffect, useState } from "react";
 import SignInButton from "../components/SignInButton";
-import { DialogContent } from "@mui/material";
 
 export default function Home() {
   const [user, setUser] = useState<{
